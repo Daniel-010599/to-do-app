@@ -1,0 +1,51 @@
+.tasks{
+    border-radius:4px;
+    background-color:var(--background);
+    margin-bottom:14px;
+    box-shadow:var(--boxShadow);
+}
+.task-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:bold;
+    font-size:13px;
+    padding:18px 20px;
+    color:var(--colorTaskActions);
+}
+.task-actions p:hover{
+    color:#535369;
+    cursor:pointer;
+}
+.task-state{
+    display:flex;
+}
+.task-state p{
+    margin:0 8px;
+}
+.to-do-footer{
+    justify-content:center;
+    align-items:center;
+    background-color:var(--background);
+    padding:18px;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:bold;
+    color:#aaacc4;
+    display:none;
+    box-shadow:var(--boxShadow);
+}
+.to-do-footer p{
+    margin:0 10px;
+}
+.to-do-footer p:hover{
+    color:#535369;
+    cursor:pointer;
+}
+.footer-description{
+    font-weight:bold;
+    font-size:13px;
+    color:var(--colorTaskActions);
+    text-align:center;
+    margin-top:50px;
+}

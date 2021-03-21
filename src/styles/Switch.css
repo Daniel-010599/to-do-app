@@ -1,0 +1,10 @@
+.todo-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+.title{
+    letter-spacing:8px;
+    font-weight:bold;
+}

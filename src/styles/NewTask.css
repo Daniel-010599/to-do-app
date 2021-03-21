@@ -1,0 +1,35 @@
+form{
+    margin-bottom:26px;
+}
+.new-todo{
+    display:flex;
+    align-items:center;
+    background-color:var(--background);
+    padding:10px 20px;
+    border-radius:4px;
+}
+.round-new-todo{
+    position:relative;
+    height:30px;
+    width:30px;
+}
+.new-todo-round{
+    position:absolute;
+    height:28px;
+    width:28px;
+    border:var(--borderRoundTodo);
+    border-radius:50%;
+    background:var(--backgroundRoundTodo);
+}
+.input-todo{
+    background-color:var(--background);
+    font-weight:bold;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:22px;
+    width:100%;
+    color:var(--colorNewTodo);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left:22px;
+}

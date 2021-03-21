@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  padding:0;
+  background-color:var(--backgroundApp);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:18px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.container-banner{
+  position: relative;
+  width:100%;
+  height:320px;
+  background-image:var(--backgroungImg);
+  background-size:cover;
+  background-position-x:center;
+}
+.content{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  color:#ffffff;
+}
+.todo{
+  position:absolute;
+  margin-top:90px;
+  max-width:640px;
+  width:100%;
+  padding:0 20px;
+  box-sizing:border-box;
+}
+.my-todo:hover{
+  cursor:pointer;
+  display:block;
+}
+:root{
+  --borderTask:1px solid #32344a;
+  --background:#25273c;
+  --backgroundApp:#181824;
+  --shadowTaks:1px 1px 50px -6px #e4e5eb;
+  --colorNewTodo:#aaacc4;
+  --backgroundRound:#2f3247;
+  --borderRoundTodo:2px solid #2f3247;
+  --colorTaskActions:#aaacc4;
+  --backgroungImg:url(images/bg-desktop-dark.jpg);
+  --backgroundImgMobile:url(images/bg-mobile-dark.jpg);
+}
+.dark-mode{
+  --borderTask:1px solid #32344a;
+  --background:#25273c;
+  --backgroundApp:#181824;
+  --shadowTaks:1px 1px 50px -6px #e4e5eb;
+  --colorNewTodo:#aaacc4;
+  --backgroundRound:#2f3247;
+  --borderRoundTodo:2px solid #2f3247;
+  --colorTaskActions:#aaacc4;
+  --boxShadow:1px 1px 50px -6px #181824;
+  --backgroungImg:url(images/bg-desktop-dark.jpg);
+  --backgroundImgMobile:url(images/bg-mobile-dark.jpg);
+}
+.light-mode{
+  --borderTask:1px solid #eae9ed;
+  --background:#ffffff;
+  --backgroundApp:#fafafa;
+  --shadowTaks:1px 1px 50px -6px #ffffff;
+  --colorNewTodo:#3c3b42;
+  --backgroundRound:#eae9ed;
+  --borderRoundTodo:2px solid #eae9ed;
+  --colorTaskActions:#8b8b93;
+  --boxShadow:1px 1px 50px -6px #e4e5eb;
+  --backgroungImg:url(images/bg-desktop-light.jpg);
+  --backgroundImgMobile:url(images/bg-mobile-light.jpg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select-all{
+  color:hsl(220, 98%, 61%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media only screen and (max-width:395px){
+  .task-actions .task-state{
+    display:none;
+  }
+  .todo .to-do-footer{
+    display:flex;
+  }
+  .task-left .round{
+    height:30px;
+    width:30px;
+  }
+  .task-left .round .check{
+    height:26px;
+    width:26px;
+  }
+  .tasks .task h2{
+    font-size:17px;
+  }
+  .new-todo .input-todo{
+    font-size:17px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width:630px){
+  .container-banner{
+    background-image:var(--backgroundImgMobile);
+    height:200px;
   }
-  to {
-    transform: rotate(360deg);
+  .todo{
+    margin-top:32px;
   }
 }
+
